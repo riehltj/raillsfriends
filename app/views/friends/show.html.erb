@@ -1,0 +1,14 @@
+<%= render @friend %>
+
+<div>
+
+
+  <%= link_to "Edit this friend", edit_friend_path(@friend) %> 
+    <%= button_to "Destroy this friend", @friend, method: :delete %>
+
+
+
+
+  <%= link_to "Back to friends", friends_path %>
+
+</div>

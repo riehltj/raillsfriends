@@ -1,0 +1,14 @@
+<h1>Friends List</h1>
+
+<div id="friends">
+
+  <% @friends.each do |friend| %>
+    <%= render friend %>
+    <%= friend.user_id%>
+    
+    <p>
+      <%= link_to "Show this friend", friend %>
+    </p>
+  <% end %>
+</div>
+<%= link_to "New friend", new_friend_path %>
